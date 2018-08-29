@@ -13,19 +13,22 @@
         <div id="main-header" class= "no-gutters">
             <div class="row align-items-center">    
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-xl-none">
-                    <img src=" {{asset('img/uaslp.png')}} " alt="logo uaslp" class="img-fluid">
+                    <img src=" {{asset('img/uaslp.png')}} " alt="logo uaslp" class="img-fluid bg-h">
                 </div>
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-xl-none">
-                    <img src=" {{asset('img/ingenieria_blanco.png')}} " alt="logo facultad de ingenieria" class="img-fluid">
+                    <img src=" {{asset('img/ingenieria_blanco.png')}} " alt="logo facultad de ingenieria" class="img-fluid bg-h">
                 </div>
                 <div class="d-none d-md-block col-md-6 d-xl-none position-relative">
-                    <img src=" {{asset('img/fondo.png')}} " alt="fondo ACC" class="img-fluid">
                     <div class="row">
-                        <div class="col-9 position-absolute">
-                            <img src=" {{asset('img/titulo_acei.png')}} " alt="" class="img-fluid">
+                        <div class="my-auto">
+                            <img src="{{asset('img/fondo.png')}}" alt="" class="img-fluid bg-h">
+                        </div>
+                        <div class="position-absolute mx-auto">
+                            <img src="{{asset('img/titulo_acei.png')}}" alt="" class="img-fluid bg-h">
                         </div>
                     </div>
                 </div>
+
         </div>
         </div>
         <div id="main-navbar">
