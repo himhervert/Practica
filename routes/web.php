@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
-});
+    return view('template');
+})->name('home');
+Route::get('/anuncios','PageController@anuncios')->name('anuncios');
+
+Route::get('/about','PageController@about')->name('about');
+Route::post('/contact','PageController@submitContact');
