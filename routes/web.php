@@ -11,10 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('template');
-})->name('home');
+Route::get('/','PageController@index')->name('index');
 Route::get('/anuncios','PageController@anuncios')->name('anuncios');
-
-Route::get('/about','PageController@about')->name('about');
-Route::post('/contact','PageController@submitContact');

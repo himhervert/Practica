@@ -4,18 +4,13 @@ namespace App\Http\Controllers;
 
 class PageController extends Controller
 {
-    public function about()
+    public function index()
     {
-        return "About Us Page";
+        return view('home');
     }
 
     public function anuncios()
     {
-        return "Anuncios Page";
+        return view('anuncios');
     }
-    public function contact()
-    {
-        return "Sumited Page";
-    }
-    
 }

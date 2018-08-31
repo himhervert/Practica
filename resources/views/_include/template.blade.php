@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{app()->getLocale()}}">
+<html lang="{!!app()->getLocale()!!}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,11 +8,11 @@
     <link href="{{asset('css/additional.css')}}" rel="stylesheet" type="text/css">
     <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css">
     <script type="text/javascript" src="{{URL::asset('js/app.js')}}"></script>
-    <title>Sistema de anuncios UDICEI</title>
+    <title></title>
 </head>
 <body>
-    <div class="container bg-dark" id="main-container">
-        <div id="main-header" class= "no-gutters">
+    <div id="main-container">
+        <div id="main-header" class= "no-gutters bg-dark">
             <div class="row align-items-center">    
                 <div class="col-6 col-sm-6 col-md-3 col-lg-3 d-xl-none">
                     <img src=" {{asset('img/uaslp.png')}} " alt="logo uaslp" class="img-fluid bg-h">
@@ -32,25 +32,11 @@
                 </div>
             </div>
         </div>
-        <nav class="navbar navbar-dark bg-dark navbar-expand-md">
-            <a href="#" class="navbar-brand">L</a>
-            <button class="navbar-toggler" data-toggle="collapse" data-target="#Menu"><span class="navbar-toggler-icon"></span></button>
-            <div id="Menu" class="collapse navbar-collapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item"><a href="#" class="nav-link">Inicio</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Anuncios</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link">Contacto</a></li>
-                </ul>
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item"><a href="#" class="nav-link">Iniciar Sesion</a></li>
-                </ul>
-        </div>
-        </nav>
-        <div id="main-content">
-        
-        </div>
-        <div id="main-footer">
-        </div>
+        @yield('navbar')
+
+        @yield('content')
+
+        @yield('footer')
     </div>
     </body>
     
