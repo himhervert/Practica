@@ -1,8 +1,23 @@
-.bg-h{
-user-drag: none; 
-user-select: none;
--moz-user-select: none;
--webkit-user-drag: none;
--webkit-user-select: none;
--ms-user-select: none;
+.logo {
+    background-repeat: no-repeat;
+    background-position:center;
+    background-size: 65%;
+    height: 6rem;
+    max-width:50%;
+}
+.logo_uaslp {
+    background-image: url(../img/uaslp.png);
+}
+.logo_ing {
+    background-image: url(../img/ing.png);
+}
+.fondo_area {
+    background-image: url(../img/fondo.png);
+    background-size: 48rem;
+    height: 6rem;
+    background-repeat: no-repeat;
+}
+.titulo_area {
+    background-image: url(../img/titulo_acei.png);
+    background-size: 100%;
 }

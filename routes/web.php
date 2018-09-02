@@ -11,5 +11,6 @@
 |
 */
 
-Route::get('/','PageController@index')->name('index');
-Route::get('/anuncios','PageController@anuncios')->name('anuncios');
+Route::get('/','PageController@index')->name('ads');
+Route::get('/about','PageController@about')->name('about');
+Route::get('/contact','PageController@contact')->name('contact');
