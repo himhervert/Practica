@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Question;
 class announcementController extends Controller
 {
     /**
@@ -35,7 +35,16 @@ class announcementController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        //validate the form data
+        $this->validate($request [
+            'title' =>'required|max:200'
+            ]);
+            $question = new Question();
+            $question->title = $request->title;
+            $question->description = $request->description;
+        //process the data and submit it
+
+        //if successful we want to redirect
     }
 
     /**
