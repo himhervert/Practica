@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="{!!app()->getLocale()!!}">
+<html lang="{{app()->getLocale()}}">
 
 <head>
     <meta charset="UTF-8">
@@ -9,7 +9,7 @@
     {{-- <link href="{{asset('css/app.css')}}" rel="stylesheet" type="text/css"> --}}
     <link href="{{asset('css/additional.css')}}" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{asset('\components\bootstrap\dist\css\bootstrap.min.css')}}">
-    <title></title>
+    <title>{{ config('app.name', 'ACC') }}</title>
 </head>
 
 <body class="">
