@@ -15,3 +15,4 @@ Route::get('/','PageController@index')->name('ads');
 Route::get('/about','PageController@about')->name('about');
 Route::get('/contact','PageController@contact')->name('contact');
 Route::resource('announcements','AnnouncementController');
+Route::resource('imagens','ImagenController');

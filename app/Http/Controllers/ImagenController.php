@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Announcement;
-class announcementController extends Controller
+
+class ImagenController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -24,7 +24,6 @@ class announcementController extends Controller
     public function create()
     {
         //
-        return view('announcements.create');
     }
 
     /**
@@ -35,22 +34,7 @@ class announcementController extends Controller
      */
     public function store(Request $request)
     {
-        //validate the form data
-        $this->validate($request, [
-                'title' => 'required|max:200',
-                'descripcion' => 'max:300'
-            ]);
-            $announcement = new Announcement();
-            $announcement->titulo = $request->title;
-            $announcement->descripcion = $request->descripcion;
-        //process the data and submit it
-        if($announcement->save()){
-            return redirect()->route('announcements.show', $announcement->id);   
-        }
-        else{
-            return redirect()->route('announcements.create');
-        }
-        //if successful we want to redirect
+        //
     }
 
     /**
