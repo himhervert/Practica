@@ -61,7 +61,10 @@ class announcementController extends Controller
      */
     public function show($id)
     {
-        //
+        //Use the mmodel to get one record from the DB
+        $anuncio = Announcement::findOrFail($id);
+        //Show the view and pass the record to the view
+        return view('announcement.show')->with('announcement',$anuncio);
     }
 
     /**

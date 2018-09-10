@@ -16,3 +16,10 @@ Route::get('/about','PageController@about')->name('about');
 Route::get('/contact','PageController@contact')->name('contact');
 Route::resource('announcements','AnnouncementController');
 Route::resource('imagens','ImagenController');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
