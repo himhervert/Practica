@@ -14,6 +14,8 @@
 
     <link rel="stylesheet" href="{{ asset('css/additional.css') }}">
     <link rel="stylesheet" href="{{ asset('components/bootstrap/dist/css/bootstrap.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('components/metismenu/dist/metisMenu.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('components/bootstrap/site/docs/4.1/assets/css/doc.min.css') }}">
 </head>
 
 <body>
@@ -30,5 +32,6 @@
 </body>
 <script type="text/javascript" src="{{ asset('components/jquery/dist/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('components/bootstrap/dist/js/bootstrap.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('components/metismenu/dist/metisMenu.min.js') }}"></script>
 
 </html>
