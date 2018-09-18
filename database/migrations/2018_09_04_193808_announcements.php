@@ -15,8 +15,12 @@ class Announcements extends Migration
     {
         Schema::create('announcements', function (Blueprint $table) {
             $table->increments('id');
+            
+            $table->integer('user_id')->unsigned();
             $table->string('titulo');
             $table->text('descripcion');
+            $table->timestamp('fecha_inicio');
+            $table->timestamp('fecha_fin');
             $table->timestamps();
         });
     }

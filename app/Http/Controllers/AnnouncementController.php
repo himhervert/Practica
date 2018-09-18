@@ -14,6 +14,7 @@ class announcementController extends Controller
     public function index()
     {
         //
+        
     }
 
     /**
